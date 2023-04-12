@@ -60,3 +60,6 @@ C:\Users\skriv\source\repos\Shelter\Server\obj\Debug\net6.0\refint\Server.dll
 C:\Users\skriv\source\repos\Shelter\Server\obj\Debug\net6.0\Server.pdb
 C:\Users\skriv\source\repos\Shelter\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
 C:\Users\skriv\source\repos\Shelter\Server\obj\Debug\net6.0\ref\Server.dll
+C:\Users\ingus\Desktop\Shelter\Server\obj\Debug\net6.0\Server.dll
+C:\Users\ingus\Desktop\Shelter\Server\obj\Debug\net6.0\refint\Server.dll
+C:\Users\ingus\Desktop\Shelter\Server\obj\Debug\net6.0\Server.pdb
