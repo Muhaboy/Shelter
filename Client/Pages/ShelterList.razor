@@ -1,0 +1,98 @@
+﻿@using Shelter.Shared;
+@page "/shelterList"
+
+@inject HttpClient Http;
+
+<h1 class="mb-3 mt-3">Shelter List</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>navn</th>
+            <th>cvr navn</th>
+            <th>facil type</th>
+            <th>Id</th>
+            <th><input type="checkbox" name="booked" />booked;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in shelterList)
+        {
+            <tr>
+                <td>@item.navn</td>
+                <td>@item.cvr_navn</td>
+                <td>@item.facil_ty</td>
+                <td>@item.Id</td>
+                <td>@item.booked</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">telefonnummer</label>
+        <input type="password" class="form-control" id="exampleInputtelefonnummer">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Fuldenavn</label>
+        <input type="password" class="form-control" id="exampleInputFuldenavn">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@code {
+    
+    private ShelterItem shelterItem = new ShelterItem();
+
+    private ShelterItem[]? shelterList = new ShelterItem[0];
+
+    private EditContext aEditContext;
+
+    protected override void OnInitialized()
+    {
+        aEditContext = new EditContext(shelterItem);
+    }
+
+    public async Task HandleValidSubmit()
+    {
+        await AddShelterItem();
+    }
+
+
+    private async Task AddShelterItem()
+    {
+        shelterItem.Id = shelterList.Length + 1;
+        await Http.PostAsJsonAsync<ShelterItem>("api/shelter", shelterItem);
+
+        Console.WriteLine("Klient: add " + shelterItem.navn + " " + shelterItem.cvr_navn + " " + shelterItem.facil_ty);
+        shelterList = await Http.GetFromJsonAsync<ShelterItem[]>("api/shelter");
+        shelterItem = new(); // clear fields in form
+    }
+
+    public async Task Remove(ShelterItem item)
+    {
+        await Http.DeleteAsync($"api/shelter/{item.Id}");
+        shelterList = await Http.GetFromJsonAsync<ShelterItem[]>("api/shelter");
+
+    }
+
+
+    private async Task UpdateItem(ShelterItem Item)
+    {
+        await Http.PutAsJsonAsync($"api/shelter", Item);
+        await OnInitializedAsync();
+    }
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        shelterList = await Http.GetFromJsonAsync<ShelterItem[]>("api/shelter");
+
+    }
+}

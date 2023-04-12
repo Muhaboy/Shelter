@@ -1,0 +1,12 @@
+C:\Users\skriv\source\repos\Shelter\Shared\bin\Debug\net6.0\Shelter.Shared.deps.json
+C:\Users\skriv\source\repos\Shelter\Shared\bin\Debug\net6.0\Shelter.Shared.dll
+C:\Users\skriv\source\repos\Shelter\Shared\bin\Debug\net6.0\Shelter.Shared.pdb
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\Shelter.Shared.csproj.AssemblyReference.cache
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\Shelter.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\Shelter.Shared.AssemblyInfoInputs.cache
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\Shelter.Shared.AssemblyInfo.cs
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\Shelter.Shared.csproj.CoreCompileInputs.cache
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\Shelter.Shared.dll
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\refint\Shelter.Shared.dll
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\Shelter.Shared.pdb
+C:\Users\skriv\source\repos\Shelter\Shared\obj\Debug\net6.0\ref\Shelter.Shared.dll

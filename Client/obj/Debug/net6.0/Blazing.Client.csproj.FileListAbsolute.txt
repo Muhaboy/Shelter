@@ -1,0 +1,6 @@
+C:\Users\skriv\source\repos\Shelter\Client\obj\Debug\net6.0\Blazing.Client.csproj.AssemblyReference.cache
+C:\Users\skriv\source\repos\Shelter\Client\obj\Debug\net6.0\Blazing.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\skriv\source\repos\Shelter\Client\obj\Debug\net6.0\Blazing.Client.AssemblyInfoInputs.cache
+C:\Users\skriv\source\repos\Shelter\Client\obj\Debug\net6.0\Blazing.Client.AssemblyInfo.cs
+C:\Users\skriv\source\repos\Shelter\Client\obj\Debug\net6.0\Blazing.Client.csproj.CoreCompileInputs.cache
+C:\Users\skriv\source\repos\Shelter\Client\obj\Debug\net6.0\Blazing.Client.MvcApplicationPartsAssemblyInfo.cache
